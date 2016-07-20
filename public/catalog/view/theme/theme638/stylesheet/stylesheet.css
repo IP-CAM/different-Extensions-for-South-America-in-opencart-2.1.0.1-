@@ -2241,7 +2241,7 @@ aside .row {
     .product-thumb .image .block-quickview .quickview {
       padding: 17px 10px;
       min-width: 164px;
-      display: inline-block;
+      display: none;
       color: #fff;
       background: rgba(92, 92, 92, 0.8);
       font-size: 14px;
