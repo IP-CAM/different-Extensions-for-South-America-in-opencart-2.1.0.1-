@@ -1,9 +1,9 @@
 <?php
 // Text
- 
-			$_['text_items2']    = '%s';
-			$_['text_shopping_cart']    = 'Cart';
-				
+
+			$_['text_items2']    = '(%s)';
+			$_['text_shopping_cart']    = 'Compras';
+
 $_['text_items']     = '%s item(s) - %s';
 $_['text_empty']     = 'Your shopping cart is empty!';
 $_['text_cart']      = 'View Cart';
