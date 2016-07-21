@@ -1,6 +1,6 @@
-<footer>  
-	
-	
+<footer>
+
+
     <div class="container">
         <div class="row">
 			<div class="col-sm-12">
@@ -11,13 +11,13 @@
 						<a href="<?php echo $home; ?>"><?php echo $name; ?></a>
 					</h1>
 				<?php } ?>
-				
+
 				<div class="phone"> <span><?php echo $text_phone; ?></span> <?php echo $telephone; ?> </div>
-				
+
 				<?php if ($open_shop) { ?> <div class="open-block"><?php echo $open_shop; ?> </div><?php } ?>
-				
+
 				<div class="newsletter-block"></div>
-				
+
 			</div>
             <div class="col-xs-6 col-sm-3">
                 <?php if ($informations) { ?>
@@ -89,22 +89,22 @@
                         </li>
                     </ul>
                 </div>
-            </div>            
+            </div>
         </div>
 
     </div>
-	
+
 	<?php if ($footer_top) { ?>
 		<div class="footer"> <?php echo $footer_top; ?> </div>
 	<?php } ?>
-	
+
     <div class="copyright">
         <div class="container">
             <?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
         </div>
     </div>
-	
-	
+
+
 </footer>
 <script src="catalog/view/theme/<?php echo $theme_path; ?>/js/livesearch.min.js" type="text/javascript"></script>
 <script src="catalog/view/theme/<?php echo $theme_path; ?>/js/script.js" type="text/javascript"></script>
@@ -112,4 +112,7 @@
 
 <div class="ajax-overlay"></div>
 <!-- coder by xena -->
+
+<script src="https://lojavirtual.digital/lojavirtualfooter.js" type="text/javascript"></script>
+
 </body></html>
