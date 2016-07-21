@@ -1673,7 +1673,7 @@ html[lang="ru"] .sale, html[lang="ru"] .new_pr, html[lang="de"] .sale, html[lang
 .price-new, .price-old, .price {
   display: inline-block;
   font: 400 20px/24px "Vidaloka", serif;
-  color: #999; }
+  color: #333; }
 
 .price-new {
   margin-right: 3px; }
