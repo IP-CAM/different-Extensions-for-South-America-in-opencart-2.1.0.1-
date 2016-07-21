@@ -1,8 +1,9 @@
 <style type="text/css">
 .webca {
-	color: #333;
+	color: #cda379;
 	font-size: 28px;
 	font-weight: bold;
+	font-family: "Vidaloka", serif;;
 }
 </style>
 <?php
