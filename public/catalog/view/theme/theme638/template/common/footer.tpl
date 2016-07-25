@@ -94,16 +94,14 @@
 
     </div>
 
-	<?php if ($footer_top) { ?>
-		<div class="footer"> <?php echo $footer_top; ?> </div>
-	<?php } ?>
-
-    <div class="copyright">
-        <div class="container">
-            <?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
-        </div>
+    <div style="width: 1000px; text-align: center; margin: auto; padding-top: 30px;">
+    	<div style="float: left; text-transform: uppercase;">Formas de pagamento:</div><br>
+    	<img src="/image/pagseguro-line.png" style="width: 100%;" width="100%">
     </div>
-
+    
+    <?php if ($footer_top) { ?>
+  		<div class="footer"> <?php echo $footer_top; ?> </div>
+  	<?php } ?>
 
 </footer>
 <script src="catalog/view/theme/<?php echo $theme_path; ?>/js/livesearch.min.js" type="text/javascript"></script>
