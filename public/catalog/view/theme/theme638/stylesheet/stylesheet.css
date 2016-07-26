@@ -5344,10 +5344,10 @@ input#input-coupon {
 footer {
   background: #f6f6f4;
   position: relative;
-  padding-top: 55px;
+  padding-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 45px;
+  margin-top: 0px;
   text-align: center;
   letter-spacing: .5px; }
   footer h5 {
@@ -5370,7 +5370,8 @@ footer {
     footer ul li + li {
       margin-top: 18px; }
   footer .footer_box {
-    text-align: left; }
+    text-align: left;
+    padding-top: 50px; }
   footer .footer {
     margin-top: 20px; }
     footer .footer > .box.newsletter {
