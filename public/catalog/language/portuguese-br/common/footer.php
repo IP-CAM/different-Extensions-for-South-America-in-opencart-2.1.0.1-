@@ -1,7 +1,7 @@
 <?php
 // Text
 $_['text_information']  = 'Informações';
-$_['text_service']      = 'Serviços ao cliente';
+$_['text_service']      = 'Atendimento';
 $_['text_extra']        = 'Outros serviços';
 $_['text_contact']      = 'Entre em contato';
 $_['text_return']       = 'Solicitar devolução';
