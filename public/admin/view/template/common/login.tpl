@@ -1,4 +1,5 @@
 <?php echo $header; ?>
+<h4><p style="text-align: center; "><span style="color: rgb(255, 0, 0);">Atenção, o login de demonstração é "demo" com a senha "demo".</span></p></h4>
 <div id="content">
   <div class="container-fluid"><br />
     <br />
@@ -23,13 +24,15 @@
               <div class="form-group">
                 <label for="input-username"><?php echo $entry_username; ?></label>
                 <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" name="username" value="<?php echo $username; ?>" placeholder="<?php echo $entry_username; ?>" id="input-username" class="form-control" />
+                  <?php /* <input type="text" name="username" value="<?php echo $username; ?>" placeholder="<?php echo $entry_username; ?>" id="input-username" class="form-control" /> */ ?>
+                  <input type="text" name="username" value="demo" placeholder="<?php echo $entry_username; ?>" id="input-username" class="form-control" />
                 </div>
               </div>
               <div class="form-group">
                 <label for="input-password"><?php echo $entry_password; ?></label>
                 <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                  <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
+                  <?php /* <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" /> */ ?>
+                  <input type="password" name="password" value="demo" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
                 </div>
                 <?php if ($forgotten) { ?>
                 <span class="help-block"><a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></span>
