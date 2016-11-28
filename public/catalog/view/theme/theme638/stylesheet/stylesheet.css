@@ -1640,17 +1640,13 @@ header .fl-soft-icons-menu31.active {
   display: inline-block;
   position: absolute;
   pointer-events: none;
-  top: 17px;
+  top: 0px;
   left: 18px;
-  width: 41px;
   height: 41px;
   background: #5b5b5b;
   color: #fff;
-  padding: 0 5px;
-  z-index: 2;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
+  padding: 0 10px;
+  z-index: 2; }
 
 .new_pr {
   color: #4f4f4f;
@@ -1673,7 +1669,7 @@ html[lang="ru"] .sale, html[lang="ru"] .new_pr, html[lang="de"] .sale, html[lang
 .price-new, .price-old, .price {
   display: inline-block;
   font: 400 20px/24px "Vidaloka", serif;
-  color: #333; }
+  color: #999; }
 
 .price-new {
   margin-right: 3px; }
@@ -2241,7 +2237,7 @@ aside .row {
     .product-thumb .image .block-quickview .quickview {
       padding: 17px 10px;
       min-width: 164px;
-      display: none;
+      display: inline-block;
       color: #fff;
       background: rgba(92, 92, 92, 0.8);
       font-size: 14px;
@@ -3301,6 +3297,136 @@ input[type="checkbox"][name="agree"] + label {
     .box_html.top-banners .banners-html > div.banner-3 .s-desc {
       bottom: 21px; }
     .box_html.top-banners .banners-html > div.banner-4 .s-desc {
+      bottom: 50%;
+      margin-bottom: -61px; }
+.box_html.bottom-banners {
+  position: relative;
+  display: inline-block;
+  width: 100%; }
+  .box_html.bottom-banners .rd-parallax-inner > div {
+    opacity: 1 !important; }
+  .box_html.bottom-banners .item-bg {
+    position: absolute;
+    z-index: 1;
+    top: 304px;
+    left: 453px;
+    width: 186px;
+    height: 244px;
+    content: '';
+    background: #f6f6f4; }
+  .box_html.bottom-banners .banner-1, .box_html.bottom-banners .banner-2, .box_html.bottom-banners .banner-3, .box_html.bottom-banners .banner-4, .box_html.bottom-banners .banner-5, .box_html.bottom-banners .banner-6 {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease; }
+    .box_html.bottom-banners .banner-1:hover, .box_html.bottom-banners .banner-2:hover, .box_html.bottom-banners .banner-3:hover, .box_html.bottom-banners .banner-4:hover, .box_html.bottom-banners .banner-5:hover, .box_html.bottom-banners .banner-6:hover {
+      z-index: 5; }
+  .box_html.bottom-banners .banner-1, .box_html.bottom-banners .banner-6 {
+    width: 517px;
+    height: 304px; }
+    .box_html.bottom-banners .banner-1 .title, .box_html.bottom-banners .banner-6 .title {
+      font: 400 35px/42px "Vidaloka", serif;
+      display: inline-block;
+      color: #333;
+      letter-spacing: -.1px;
+      text-transform: uppercase; }
+    .box_html.bottom-banners .banner-1 p, .box_html.bottom-banners .banner-6 p {
+      margin-bottom: 0;
+      color: #888;
+      padding-right: 24%;
+      letter-spacing: .3px; }
+    .box_html.bottom-banners .banner-1 .title + p, .box_html.bottom-banners .banner-6 .title + p {
+      margin-top: 7px; }
+    .box_html.bottom-banners .banner-1 p + .tx-link, .box_html.bottom-banners .banner-6 p + .tx-link {
+      margin-top: 31px; }
+    .box_html.bottom-banners .banner-1 .tx-link, .box_html.bottom-banners .banner-6 .tx-link {
+      display: inline-block;
+      color: #888;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font: 300 16px/19px "Roboto", sans-serif;
+      letter-spacing: .7px; }
+    .box_html.bottom-banners .banner-1 a, .box_html.bottom-banners .banner-6 a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 3px solid #5c5c5c;
+      padding: 43px 40px 30px 50px; }
+      .box_html.bottom-banners .banner-1 a:hover, .box_html.bottom-banners .banner-6 a:hover {
+        border-color: #cda379; }
+        .box_html.bottom-banners .banner-1 a:hover .tx-link, .box_html.bottom-banners .banner-6 a:hover .tx-link {
+          color: #cda379; }
+  .box_html.bottom-banners .banner-6 .title {
+    line-height: 52px; }
+  .box_html.bottom-banners .banner-6 a {
+    padding-top: 29px; }
+  .box_html.bottom-banners .banner-6 p + .tx-link {
+    margin-top: 18px; }
+  .box_html.bottom-banners .banner-6 p {
+    padding-right: 10%; }
+  .box_html.bottom-banners .banner-2 {
+    margin-top: 109px;
+    margin-left: -117px;
+    z-index: 2; }
+  .box_html.bottom-banners .banner-3 {
+    margin-left: -86px;
+    z-index: 3; }
+  .box_html.bottom-banners .banner-4 {
+    position: absolute;
+    top: 66px;
+    right: 0; }
+  .box_html.bottom-banners .banner-5 {
+    clear: left;
+    margin-top: -132px;
+    margin-left: 71px; }
+  .box_html.bottom-banners .banner-6 {
+    position: absolute;
+    right: 31px;
+    top: 290px;
+    z-index: 4;
+    width: 470px; }
+
+/*========================================================
+                       HTML boxes 2
+=========================================================*/
+.box_html.fim-banners .banners-html {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 20px; }
+  .box_html.fim-banners .banners-html > div {
+    margin-bottom: 30px;
+    position: relative; }
+    .box_html.fim-banners .banners-html > div .s-desc {
+      position: absolute;
+      left: 30px;
+      bottom: 26px;
+      font: 300 19px/23px "Roboto", sans-serif;
+      letter-spacing: 1.2px;
+      color: #fff;
+      text-transform: uppercase; }
+      .box_html.fim-banners .banners-html > div .s-desc span {
+        display: inline-block;
+        letter-spacing: 1.8px;
+        font: 400 36px/41px "Vidaloka", serif; }
+      .box_html.fim-banners .banners-html > div .s-desc * + span {
+        margin-top: 11px; }
+    .box_html.fim-banners .banners-html > div > a {
+      display: inline-block;
+      position: relative;
+      max-width: 100%;
+      overflow: hidden; }
+    .box_html.fim-banners .banners-html > div.banner-1 .s-desc {
+      color: #333; }
+    .box_html.fim-banners .banners-html > div.banner-2 .s-desc {
+      bottom: auto;
+      top: 26px; }
+    .box_html.fim-banners .banners-html > div.banner-3 .s-desc {
+      bottom: 21px; }
+    .box_html.fim-banners .banners-html > div.banner-4 .s-desc {
       bottom: 50%;
       margin-bottom: -61px; }
 .box_html.bottom-banners {
@@ -5344,10 +5470,10 @@ input#input-coupon {
 footer {
   background: #f6f6f4;
   position: relative;
-  padding-top: 0px;
+  padding-top: 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 45px;
   text-align: center;
   letter-spacing: .5px; }
   footer h5 {
@@ -5370,8 +5496,7 @@ footer {
     footer ul li + li {
       margin-top: 18px; }
   footer .footer_box {
-    text-align: left;
-    padding-top: 50px; }
+    text-align: left; }
   footer .footer {
     margin-top: 20px; }
     footer .footer > .box.newsletter {
@@ -5401,8 +5526,7 @@ a + .phone {
   font-size: 14px;
   line-height: 16px;
   font-weight: 300;
-  color: #888;
-  background: #fff; }
+  color: #888; }
   .copyright a {
     color: #888; }
     .copyright a:visited {
@@ -5667,3 +5791,17 @@ a + .phone {
   .delivery_page .table td,
   .delivery_page .table th {
     padding: 6px; } }
+
+
+/* ICONES BARRA DE INFO */
+.barra-info {
+  background-color: #f6f6f4; 
+  margin-bottom: 50px;
+  padding: 35px 0px 75px 0px;
+  color: #666;
+  text-align: left;
+}
+.barra-info .fa {
+  margin-top: 10px;
+}
+/* FIM - ICONES BARRA DE INFO */

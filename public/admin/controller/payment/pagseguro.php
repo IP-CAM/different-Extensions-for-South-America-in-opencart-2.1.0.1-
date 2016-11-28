@@ -49,6 +49,8 @@ class ControllerPaymentPagseguro extends Controller {
 		$data['entry_update_status_alert'] = $this->language->get('entry_update_status_alert');
 		$data['entry_tipo_frete'] = $this->language->get('entry_tipo_frete');
 		$data['entry_total'] = $this->language->get('entry_total');
+		$data['entry_campo_numero'] = $this->language->get('entry_campo_numero');
+		$data['entry_campo_complemento'] = $this->language->get('entry_campo_complemento');
 		
 		$data['help_token'] = $this->language->get('help_token');
 		$data['help_email'] = $this->language->get('help_email');
@@ -61,7 +63,9 @@ class ControllerPaymentPagseguro extends Controller {
 		$data['help_order_devolvida'] = $this->language->get('help_order_devolvida');
 		$data['help_order_cancelada'] = $this->language->get('help_order_cancelada');
 		$data['help_update_status_alert'] = $this->language->get('help_update_status_alert');
-		$data['help_total'] = $this->language->get('help_total');		
+		$data['help_total'] = $this->language->get('help_total');
+		$data['help_campo_numero'] = $this->language->get('help_campo_numero');
+		$data['help_campo_complemento'] = $this->language->get('help_campo_complemento');
 		
 		$data['button_save'] = $this->language->get('button_save');
 		$data['button_cancel'] = $this->language->get('button_cancel');
@@ -227,11 +231,27 @@ class ControllerPaymentPagseguro extends Controller {
 		  $data['pagseguro_sort_order'] = $this->config->get('pagseguro_sort_order');
 		}
 		
+		if (isset($this->request->post['pagseguro_campo_numero'])) {
+		  $data['pagseguro_campo_numero'] = $this->request->post['pagseguro_campo_numero'];
+		} else {
+		  $data['pagseguro_campo_numero'] = $this->config->get('pagseguro_campo_numero');
+		}
+
+		if (isset($this->request->post['pagseguro_campo_complemento'])) {
+		  $data['pagseguro_campo_complemento'] = $this->request->post['pagseguro_campo_complemento'];
+		} else {
+		  $data['pagseguro_campo_complemento'] = $this->config->get('pagseguro_campo_complemento');
+		}		
+		
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('payment/pagseguro.tpl', $data));
+		if (version_compare(VERSION, '2.2') < 0) {
+			$this->response->setOutput($this->load->view('payment/pagseguro.tpl', $data));
+		} else {
+			$this->response->setOutput($this->load->view('payment/pagseguro', $data));
+		}
 	}
 
 	protected function validate() {

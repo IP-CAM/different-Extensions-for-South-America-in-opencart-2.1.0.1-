@@ -104,7 +104,19 @@
 	            <?php } ?>	
               </select>
             </div>
-          </div>                    
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-campo-numero"><span data-toggle="tooltip" title="<?php echo $help_campo_numero; ?>"><?php echo $entry_campo_numero; ?></span></label>
+            <div class="col-sm-10">
+              <input type="text" name="pagseguro_campo_numero" value="<?php echo $pagseguro_campo_numero; ?>" placeholder="<?php echo $entry_campo_numero; ?>" id="input-campo-numero" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-campo-complemento"><span data-toggle="tooltip" title="<?php echo $help_campo_complemento; ?>"><?php echo $entry_campo_complemento; ?></span></label>
+            <div class="col-sm-10">
+              <input type="text" name="pagseguro_campo_complemento" value="<?php echo $pagseguro_campo_complemento; ?>" placeholder="<?php echo $entry_campo_complemento; ?>" id="input-campo-complemento" class="form-control" />
+            </div>
+          </div>		  
           <div class="form-group">
           	<label class="col-sm-2 control-label"><span data-toggle="tooltip" title="<?php echo $help_order_aguardando_pagamento; ?>"><?php echo $entry_order_aguardando_pagamento; ?></span></label>
             <div class="col-sm-10">

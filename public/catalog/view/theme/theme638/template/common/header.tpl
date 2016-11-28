@@ -26,9 +26,9 @@
         <meta name="keywords" content="<?php echo $keywords; ?>"/>
     <?php } ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--    --><?php //if ($icon) { ?>
-<!--        <link href="--><?php //echo $icon; ?><!--" rel="icon"/>-->
-<!--    --><?php //} ?>
+        <?php /* if ($icon) { ?>
+            <link href="<?php echo $icon; ?>" rel="icon"/>
+        <?php } */ ?>
 
     <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
     <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
@@ -76,7 +76,110 @@
         <?php echo $analytic; ?>
     <?php } ?>
     <link href="catalog/view/theme/<?php echo $theme_path; ?>/stylesheet/stylesheet.css" rel="stylesheet">
+
+
+    <!-- TEMPORARIO -->
+
+    <div id="tm-newsletter-popup" class="newsletter-popup-wrap">
+        <div class="newsletter-popup" >
+
+            <div class="box-content">
+               <!--                     <div class="logo">
+                        <img src="http://demo.lojavirtual.digital/image/catalog/logo.png" title="Leezy Store"
+                             alt="Leezy Store" class="img-responsive"/>
+                    </div>
+                 -->
+                <h2>Novidades</h2>
+
+                <p>Assine nossa lista de e-mails e seja o primeiro a saber sobre novos produtos, ofertas especiais, eventos e informações de desconto.</p>
+
+                <form method="post" enctype="multipart/form-data" id="tm-newsletter-popup-form">
+                    <div class="tm-login-form">
+                        <label class="control-label" for="input-tm-newsletter-popup-email"></label>
+                        <input type="text" name="tm_newsletter_popup_email" value="" placeholder="Digite seu e-mail"
+                               id="input-tm-newsletter-popup-email" class="form-control"/>
+                        <button type="submit" id="tm-newsletter-popup-button" class="btn newsletter-popup-btn"><!-- <i
+                                class="material-design-drafts"></i> -->Inscrever</button>
+                        <span id="tm-newsletter-popup_error" class="newsletter-error"></span>
+                        <span id="tm-newsletter-popup_success" class="newsletter-success"></span>
+                    </div>
+
+                </form>
+
+            </div>
+            <a href="#" id="newsletter-popup-close-btn" class="newsletter-popup-close-btn material-design-close47"></a>
+            <a href='#' id="newsletter-popup-dont-show" class="newsletter-popup-dont-show">
+                Não mostrar esta mensagem novamente            </a>
+        </div>
+    </div>
+
+    <script>
+        function getCookie(c_name) {
+            var search = c_name + "="
+            var returnvalue = "";
+            if (document.cookie.length > 0) {
+                offset = document.cookie.indexOf(search)
+                if (offset != -1) {
+                    offset += search.length
+                    end = document.cookie.indexOf(";", offset);
+                    if (end == -1) end = document.cookie.length;
+                    returnvalue=unescape(document.cookie.substring(offset, end))
+                }
+            }
+            return returnvalue;
+        }
+
+
+        jQuery(document).ready(function ($) {
+            var showIt = getCookie('shownewsletter');
+            var m = 1;
+            var date = new Date();
+            date.setTime(date.getTime() + (m * 60 * 1000));
+            if (showIt == '') {
+                $('#tm-newsletter-popup').fadeIn(300);
+            }
+            $('#newsletter-popup-dont-show').click(function (e) {
+                e.preventDefault()
+                document.cookie = 'shownewsletter=true; path=/; expires=' + date.toString();
+                $('#tm-newsletter-popup').fadeOut(300);
+            })
+            $('#newsletter-popup-close-btn').click(function (e) {
+                e.preventDefault();
+                document.cookie = 'shownewsletter=false';
+                $('#tm-newsletter-popup').fadeOut(300);
+            })
+            $('#tm-newsletter-popup').submit(function (e) {
+                e.preventDefault();
+                var email = $("#input-tm-newsletter-popup-email").val();
+                var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/igm;
+                if (emailRegex.test(email)) {
+                    var dataString = 'tm_newsletter_popup_email=' + email;
+                    $.ajax({
+                        type: "POST",
+                        url: "index.php?route=module/tm_newsletter_popup",
+                        data: dataString,
+                        cache: false,
+                        success: function (result) {
+                            if (!result) {
+                                $('#tm-newsletter-popup_success').html('Seu e-mail foi inscrito com sucesso').fadeIn(300).delay(4000).fadeOut(300);
+                            } else {
+                                $('#tm-newsletter-popup_error').dequeue();
+                                $('#tm-newsletter-popup_error').html(result).fadeIn(300).delay(4000).fadeOut(300);
+                            }
+                        }
+                    });
+                } else {
+                    $('#tm-newsletter-popup_error').html('Por favor digite um e-mail válido!').fadeIn(300).delay(4000).fadeOut(300);
+                }
+            });
+
+
+        });
+    </script>
+    <!-- FIM TEMPORARIO -->
+
 </head>
+
 <body class="<?php echo $class; ?>">
 <p id="gl_path" class="hidden"><?php echo $theme_path; ?></p>
 <div id="page">
@@ -90,6 +193,7 @@
 						<li> <a href="<?php echo $home; ?>" title="<?php echo $text_home; ?>" > <i class="material-design-home149"></i> <span><?php echo $text_home; ?></span> </a> </li>					
 						<li> <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" > <i class="material-design-user157"></i> <span><?php echo $text_account; ?></span> </a> </li>
 						<li> <a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"> <i class="material-icons-shopping_basket"></i> <span><?php echo $text_shopping_cart; ?></span> </a> </li>
+                        <li><a class="button-wishlist" href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a></li>
 						<li> <a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"> <i class="material-design-forward18"></i> <span><?php echo $text_checkout; ?> </span> </a> </li>
 						<li class="log"><?php if ($logged) { ?>
 							<a href="<?php echo $logout; ?>"><i class="fa fa-sign-out"></i> <span><?php echo $text_logout; ?></span></a>
@@ -133,7 +237,7 @@
 				
 				<?php echo $cart; ?>
 				
-				<a class="button-wishlist" href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
+				
 				
 			</div>
 			

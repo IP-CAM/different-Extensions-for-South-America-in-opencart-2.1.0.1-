@@ -28,6 +28,8 @@ $_['entry_geo_zone']      				= 'Região geográfica';
 $_['entry_status']        				= 'Situação';
 $_['entry_sort_order']    				= 'Ordem';
 $_['entry_update_status_alert'] 		= 'Alertar sobre mudança no status';
+$_['entry_campo_complemento']  			= 'Campo do Complemento do endereço';  
+$_['entry_campo_numero']  				= 'Campo do Número do endereço'; 
 
 // Help
 $_['help_token']				= 'Token de Segurança fornecido pelo PagSeguro';
@@ -42,6 +44,8 @@ $_['help_order_devolvida']		= 'O valor da transação foi devolvido para o compr
 $_['help_order_cancelada']		= 'A transação foi cancelada sem ter sido finalizada.';
 $_['help_update_status_alert']	= 'Envia email para o cliente avisando-o sobre mudança no status do pedido.';
 $_['help_total']				= 'Total mínimo que o pedido deve alcançar para que este método de pagamento seja habilitado.';
+$_['help_campo_complemento']	= 'Informe o nome do campo na tabela ADDRESS que contém o Complemento do endereço (exemplo: complemento) OU o nome do campo personalizado que contém o Complemento(exemplo: Complemento)';
+$_['help_campo_numero']			= 'Informe o nome do campo na tabela ADDRESS que contém o Número do endereço (exemplo: numero) OU o nome do campo personalizado que contém a Número(exemplo: Número)';
 
 // Error
 $_['error_permission']    		= 'Atenção: Você não possui permissão para modificar o PagSeguro!';

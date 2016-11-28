@@ -161,7 +161,6 @@
                                 <?php } else { ?>
                                     <span class="price-old"><?php echo $price; ?></span>
                                 <?php } ?>
-                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme638/parcelamento.php'; ?>
                                 <?php if ($tax) { ?>
                                     <span class="tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span>
                                 <?php } ?>
@@ -889,7 +888,7 @@
                                        style="padding-bottom: <?php echo($product['img-height'] / $product['img-width'] * 100); ?>%"
                                        href="<?php echo $product['href']; ?>"> <img alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" data-src="<?php echo $product['thumb']; ?>" src="#"/>
                                     </a>
-
+									
                                 </div>
                                 <div class="caption">
                                     <div class="name"> <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a> </div>
@@ -902,7 +901,6 @@
                                             <?php } else { ?>
                                                 <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
                                             <?php } ?>
-                                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/catalog/view/theme/theme638/parcelamento.php'; ?>
                                             <?php if ($product['tax']) { ?>
                                                 <span
                                                     class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
@@ -910,7 +908,7 @@
                                         </p>
                                     <?php } ?>
                                 </div>
-
+								
 									<div class="rating"><?php if ($product['rating']) { ?>
 										<?php for ($i = 1; $i <= 5; $i++) { ?>
 											<?php if ($product['rating'] < $i) { ?>
@@ -920,14 +918,14 @@
 											<?php } ?>
 										<?php } ?>
 									<?php } ?></div>
-
-
-                                <div class="cart-button">
-                                    <button class="product-buttons" type="button" onclick="ajaxAdd($(this),<?php echo $product['product_id'] ?>);"><i class="material-icons-add"></i> <span><?php echo $button_cart; ?></span></button>
-                                    <button class="btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-icons-shuffle"></i></button>
+								
+								
+                                <div class="cart-button">                                   
+                                    <button class="product-buttons" type="button" onclick="ajaxAdd($(this),<?php echo $product['product_id'] ?>);"><i class="material-icons-add"></i> <span><?php echo $button_cart; ?></span></button>									
+                                    <button class="btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-icons-shuffle"></i></button> 
 									<button class="btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="material-icons-favorite_border"></i></button>
                                 </div>
-
+								
                                 <div class="clear"></div>
                             </div>
 
@@ -1193,3 +1191,4 @@
 </script>
 
 <?php echo $footer; ?>
+

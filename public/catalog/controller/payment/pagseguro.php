@@ -14,6 +14,8 @@ class ControllerPaymentPagseguro extends Controller {
 		$mb_substr = (function_exists("mb_substr")) ? true : false;
 		
     	$this->load->model('checkout/order');
+		$this->load->model('payment/pagseguro');
+		
 	    $order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);		
 		
 		$paymentRequest = new PagSeguroPaymentRequest();
@@ -64,6 +66,30 @@ class ControllerPaymentPagseguro extends Controller {
 		$this->load->model('localisation/zone');
 	    
 	   	if ($this->cart->hasShipping()) {
+			
+			$number = '';
+			
+			if($this->config->get('pagseguro_campo_numero') != "" && isset($order_info['shipping_' . $this->config->get('pagseguro_campo_numero')]) && $order_info['shipping_' . $this->config->get('pagseguro_campo_numero')] != ''){
+				$number = html_entity_decode($order_info['shipping_' . $this->config->get('pagseguro_campo_numero')], ENT_QUOTES, 'UTF-8');
+			} else if($this->config->get('pagseguro_campo_numero') != ""){
+				$numero = $this->model_payment_pagseguro->getFieldValue($this->config->get('pagseguro_campo_numero'));
+				
+				if($numero){
+					$number = html_entity_decode($numero, ENT_QUOTES, 'UTF-8');
+				}
+			}
+
+			$complement = '';
+			
+			if($this->config->get('pagseguro_campo_complemento') != "" && isset($order_info['shipping_' . $this->config->get('pagseguro_campo_complemento')]) && $order_info['shipping_' . $this->config->get('pagseguro_campo_complemento')] != ''){
+				$complement = html_entity_decode($order_info['shipping_' . $this->config->get('pagseguro_campo_complemento')], ENT_QUOTES, 'UTF-8');
+			} else if($this->config->get('pagseguro_campo_complemento') != ""){
+				$complemento = $this->model_payment_pagseguro->getFieldValue($this->config->get('pagseguro_campo_complemento'));
+				
+				if($complemento){
+					$complement = html_entity_decode($complemento, ENT_QUOTES, 'UTF-8');
+				}
+			}			
 
 			$zone = $this->model_localisation_zone->getZone($order_info['shipping_zone_id']);
 			
@@ -72,8 +98,8 @@ class ControllerPaymentPagseguro extends Controller {
 				Array(  
 					'postalCode'=> preg_replace ("/[^0-9]/", '', $order_info['shipping_postcode']),
 					'street' 	=> $order_info['shipping_address_1'],     
-					'number' 	=> '', // Não há este campo no OpenCart
-					'complement'=> '', // Não há este campo no OpenCart
+					'number' 	=> $number,
+					'complement'=> $complement,
 					'district' 	=> $order_info['shipping_address_2'],         
 					'city' 		=> $order_info['shipping_city'],        
 					'state' 	=> (isset($zone['code'])) ? $zone['code'] : '',       
@@ -82,6 +108,30 @@ class ControllerPaymentPagseguro extends Controller {
 			);
 		}
 		else{
+			$number = '';
+			
+			if($this->config->get('pagseguro_campo_numero') != "" && isset($order_info['payment_' . $this->config->get('pagseguro_campo_numero')]) && $order_info['payment_' . $this->config->get('pagseguro_campo_numero')] != ''){
+				$number = html_entity_decode($order_info['payment_' . $this->config->get('pagseguro_campo_numero')], ENT_QUOTES, 'UTF-8');
+			} else if($this->config->get('pagseguro_campo_numero') != ""){
+				$numero = $this->model_payment_pagseguro->getFieldValue($this->config->get('pagseguro_campo_numero'));
+				
+				if($numero){
+					$number = html_entity_decode($numero, ENT_QUOTES, 'UTF-8');
+				}
+			}
+
+			$complement = '';
+			
+			if($this->config->get('pagseguro_campo_complemento') != "" && isset($order_info['payment_' . $this->config->get('pagseguro_campo_complemento')]) && $order_info['payment_' . $this->config->get('pagseguro_campo_complemento')] != ''){
+				$complement = html_entity_decode($order_info['payment_' . $this->config->get('pagseguro_campo_complemento')], ENT_QUOTES, 'UTF-8');
+			} else if($this->config->get('pagseguro_campo_complemento') != ""){
+				$complemento = $this->model_payment_pagseguro->getFieldValue($this->config->get('pagseguro_campo_complemento'));
+				
+				if($complemento){
+					$complement = html_entity_decode($complemento, ENT_QUOTES, 'UTF-8');
+				}
+			}			
+			
 			$zone = $this->model_localisation_zone->getZone($order_info['payment_zone_id']);
 			
 			// Endereço para entrega		
@@ -89,8 +139,8 @@ class ControllerPaymentPagseguro extends Controller {
 				Array(  
 					'postalCode'=> preg_replace ("/[^0-9]/", '', $order_info['payment_postcode']),
 					'street' 	=> $order_info['payment_address_1'],     
-					'number' 	=> '', // Não há este campo no OpenCart
-					'complement'=> '', // Não há este campo no OpenCart
+					'number' 	=> $number,
+					'complement'=> $complement,
 					'district' 	=> $order_info['payment_address_2'],         
 					'city' 		=> $order_info['payment_city'],        
 					'state' 	=> (isset($zone['code'])) ? $zone['code'] : '',       
@@ -138,11 +188,17 @@ class ControllerPaymentPagseguro extends Controller {
 				$description = utf8_encode(substr(utf8_decode($product['name'].$model.$options), 0, 100));
 			}
 			
+			if (version_compare(VERSION, '2.2') < 0) {
+				$amount = $this->currency->format($product['price'], $order_info['currency_code'], false, false);
+			} else {
+				$amount = $this->currency->format($product['price'], $order_info['currency_code'], $order_info['currency_value'], false);
+			}
+			
 	    	$item = Array(
 				'id' => $product['product_id'],
 				'description' => trim($description),
 				'quantity' => $product['quantity'],
-				'amount' => $this->currency->format($product['price'], $order_info['currency_code'], false, false)
+				'amount' => $amount
 			);
 			
 			// O frete será calculado pelo PagSeguro.
@@ -168,8 +224,12 @@ class ControllerPaymentPagseguro extends Controller {
 		// url para receber notificações sobre o status das transações
 		$paymentRequest->setNotificationURL($this->url->link('payment/pagseguro/callback')); 
 	    
-	    // obtendo frete, descontos e taxas 
-		$total = $this->currency->format($order_info['total'] - $this->cart->getSubTotal(), $order_info['currency_code'], false, false);
+	    // obtendo frete, descontos e taxas
+		if (version_compare(VERSION, '2.2') < 0) {		
+			$total = $this->currency->format($order_info['total'] - $this->cart->getSubTotal(), $order_info['currency_code'], false, false);
+		} else {
+			$total = $this->currency->format($order_info['total'] - $this->cart->getSubTotal(), $order_info['currency_code'], $order_info['currency_value'], false);
+		}
 
 		if ($total > 0) {
 	    	$item = Array(
@@ -198,10 +258,14 @@ class ControllerPaymentPagseguro extends Controller {
 			$this->log->write('PagSeguro :: ' . $e->getOneLineMessage());
 		}		
 		
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/pagseguro.tpl')) {
-			return $this->load->view($this->config->get('config_template') . '/template/payment/pagseguro.tpl', $data);
+		if (version_compare(VERSION, '2.2') < 0) {
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/pagseguro.tpl')) {
+				return $this->load->view($this->config->get('config_template') . '/template/payment/pagseguro.tpl', $data);
+			} else {
+				return $this->load->view('default/template/payment/pagseguro.tpl', $data);
+			}
 		} else {
-			return $this->load->view('default/template/payment/pagseguro.tpl', $data);
+			return $this->load->view('payment/pagseguro', $data);
 		}
 	}
 		
@@ -254,7 +318,11 @@ class ControllerPaymentPagseguro extends Controller {
 						
 						// Valor 1: Pac, valor 2: Sedex, valor 3: não especificado ou cálculo não realizado pelo PagSeguro
     		    		if($pagSeguroShippingType->getValue() != 3){
-    		    			$comment .= "\nTipo de frete escolhido no PagSeguro: " . $pagSeguroShippingType->getTypeFromValue() . "\nValor do frete: " . $this->currency->format($valor_frete, $order['currency_code'], false, false);
+							if (version_compare(VERSION, '2.2') < 0) {
+								$comment .= "\nTipo de frete escolhido no PagSeguro: " . $pagSeguroShippingType->getTypeFromValue() . "\nValor do frete: " . $this->currency->format($valor_frete, $order['currency_code'], false, false);
+							} else {
+								$comment .= "\nTipo de frete escolhido no PagSeguro: " . $pagSeguroShippingType->getTypeFromValue() . "\nValor do frete: " . $this->currency->format($valor_frete, $order['currency_code'], $order_info['currency_value'], false);
+							}
     		    		}
 	    
 					    $update_status_alert = false;
