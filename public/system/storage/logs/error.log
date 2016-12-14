@@ -13653,3 +13653,189 @@
 2016-11-27 17:26:28 - PHP Notice:  Undefined variable: icon in /Users/fernandomendes/github/opencart57564/public/catalog/view/theme/theme638/template/common/header.tpl on line 29
 2016-11-27 17:26:29 - PHP Notice:  Undefined variable: icon in /Users/fernandomendes/github/opencart57564/public/catalog/view/theme/theme638/template/common/header.tpl on line 29
 2016-11-27 17:26:29 - PHP Notice:  Undefined variable: icon in /Users/fernandomendes/github/opencart57564/public/catalog/view/theme/theme638/template/common/header.tpl on line 29
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:53 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: logo in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 7
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: home in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 11
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: name in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 11
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: text_phone in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 15
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: telephone in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 15
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: open_shop in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 17
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: footer_top in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 97
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 111
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 112
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: text_shopping_cart in /var/www/html/public/catalog/view/theme/theme638/template/common/cart.tpl on line 5
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 41
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 42
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 43
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 44
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 45
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 46
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 47
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 48
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 49
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 54
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 56
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 66
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 70
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 78
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 184
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: categories_tm in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 246
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: categories_tm in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 258
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: header_top in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 266
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: top in /var/www/html/public/catalog/view/theme/theme638/template/common/home.tpl on line 2
+2016-11-28 5:51:53 - PHP Notice:  Undefined variable: bottom in /var/www/html/public/catalog/view/theme/theme638/template/common/home.tpl on line 24
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 9
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: options in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 10
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-height in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: img-width in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Warning:  Division by zero in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 268
+2016-11-28 5:51:58 - PHP Notice:  Undefined index: last_array in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 275
+2016-11-28 5:51:58 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/public/catalog/view/theme/theme638/template/module/featured.tpl on line 276
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: logo in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 7
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: home in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 11
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: name in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 11
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: text_phone in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 15
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: telephone in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 15
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: open_shop in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 17
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: footer_top in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 97
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 111
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/footer.tpl on line 112
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: text_shopping_cart in /var/www/html/public/catalog/view/theme/theme638/template/common/cart.tpl on line 5
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 41
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 42
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 43
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 44
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 45
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 46
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 47
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 48
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 49
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 54
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 56
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 66
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 70
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 78
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: theme_path in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 184
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: categories_tm in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 246
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: categories_tm in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 258
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: header_top in /var/www/html/public/catalog/view/theme/theme638/template/common/header.tpl on line 266
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: top in /var/www/html/public/catalog/view/theme/theme638/template/common/home.tpl on line 2
+2016-11-28 5:51:58 - PHP Notice:  Undefined variable: bottom in /var/www/html/public/catalog/view/theme/theme638/template/common/home.tpl on line 24
